@@ -39,12 +39,12 @@ char **stringToTokens(char *str)
 		fprintf(stderr, "sh: allocation error\n");
 		exit(1);
 	}
-	token = strok(str, separator);
+	token = strtok(str, separator);
 
 	while (token != NULL)
 	{
 		tokens[i] = token;
-		token = strok(NULL, separator);
+		token = strtok(NULL, separator);
 		i++;
 	}
 	tokens[i] = NULL;
