@@ -73,7 +73,7 @@ int main(int argc, char **argv)
 		if (isatty(fileno(stdin)))
 		{
 			isPipe = 1;
-			_puts("cisfun#: ");
+			_puts("simple_shell#: ");
 		}
 
 		getline(&buffer, &buffsize, stdin);
